@@ -2,3 +2,4 @@ build/*
 envs/linux-macos.sh
 run/macOS/compile.sh
 .DS_Store
+.vscode/
