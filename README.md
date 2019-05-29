@@ -32,3 +32,13 @@ Submit a batch file for one of the simulations
 cd ../simulations
 sbatch runObstacleSquare.sh
 ```
+
+
+# Romain's notes
+
+
+```
+gmsh -2 ./geometry/young/young.geo
+export OMP_NUM_THREADS=12
+./build/bin/main ./geometry/young/young.msh ./params/young.dat pipo.msh
+```
