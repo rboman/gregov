@@ -1,9 +1,9 @@
-#ifndef source_hpp_included
-#define source_hpp_included
+#ifndef shallow_source_hpp_included
+#define shallow_source_hpp_included
 
 #include <Eigen/Dense>
-#include "../params/Params.hpp"
-#include "../solver/field.hpp"
+#include "../../params/Params.hpp"
+#include "../../solver/field.hpp"
 
 
 /**
@@ -24,12 +24,4 @@
 void sourceShallowCstGradQuadFrict(Field& field, const SolverParams& solverParams);
 
 
-/**
- * \brief Function that computes the source term of the shallow water equation
- * (coriolis).
- * \param field Structure containing all the information about the computed unknowns.
- * \param solverParams Structure containing the solver's parameters.
- */
-void sourceShallowLinCst(Field& field, const SolverParams& solverParams);
-
-#endif // source_hpp_included
+#endif // shallow_source_hpp_included
