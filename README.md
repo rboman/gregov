@@ -14,6 +14,10 @@ Development of the [Discontinuous Galerkin method](https://en.wikipedia.org/wiki
 * The elements edges are straight (constant normal vector over it)
 
 ## Compilation procedure
+The project use system to manage the build system. The `run` directory contains already some predefined configuration for various platform.
+
+Do not forget to install gmsh 4.4.0 SDK and Eigen 3.3.7 SDK on your system.
+
 ### On NIC4/VEGA
 Connect to NIC4/VEGA (using SSH for instance). Then, build the code (`<cluster>` is either `vega` or `nic4`):
 ```bash
